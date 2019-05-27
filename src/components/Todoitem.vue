@@ -22,7 +22,7 @@
 
 <style scoped>
     .todo-item{
-        background: #f4f4f4;
+        background: #b5b5b5;
         padding: 10px;
         border-bottom: 1px #ccc dotted;
     }
@@ -32,8 +32,9 @@
     }
 
     .del {
-        background: #ff0000;
-        color: #fff;
+        background: #443f3f;
+        color: red;
+        border: 3px;
 
     }
 </style>

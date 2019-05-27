@@ -10,29 +10,29 @@
 <script>
 // import uuid from 'uuid';
 
-    export default {
-        name: "AddTodo",
-        data() {
-            return {
-                title: ''
+export default {
+    name: "AddTodo",
+    data() {
+        return {
+            title: ''
+        }
+    },
+    methods: {
+        addTodo(e) {
+            // keeps js from trying to submit to file and refresh page
+            e.preventDefault();
+            const newTodo = {
+                // id: uuid.v4(),
+                title: this.title,
+                completed: false
             }
-        },
-        methods: {
-            addTodo(e) {
-                // keeps js from trying to submit to file and refresh page
-                e.preventDefault();
-                const newTodo = {
-                    // id: uuid.v4(),
-                    title: this.title,
-                    completed: false
-                }
-                // Send up to parent
-                this.$emit('add-todo', newTodo);
+            // Send up to parent
+            this.$emit('add-todo', newTodo);
 
-                this.title = '';
-            }
+            this.title = '';
         }
     }
+}
 </script>
 
 <style scoped>
