@@ -1,13 +1,15 @@
 {
   "name": "vue-js-tut",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "description": "quick tutorial for me to learn vue.js and nodejs in general",
+  "main": "index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "Matt Camp",
+  "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^0.18.0",
     "core-js": "^2.6.5",
     "uuid": "^3.3.2",
@@ -46,4 +48,8 @@
     "> 1%",
     "last 2 versions"
   ]
+=======
+    "@vue/cli": "^3.7.0"
+  }
+>>>>>>> 6ee9a8852be9092471ea1907f96912c59b29e61c
 }
